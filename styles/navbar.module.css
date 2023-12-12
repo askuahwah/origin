@@ -1,0 +1,92 @@
+.navbar_main {
+    display: flex;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+.navbar_a {
+    display: flex;
+    align-items: center;
+    left: auto;
+    top: 0;
+    background-color:rgba(99, 99, 99, 1);
+    width: 100%;
+    height: 20vh;
+    margin-left: 19%;
+    
+}
+
+.navbar_search {
+    background-color: black;
+    width: 80vh;
+    height: 7vh;
+    border-radius: 32px;
+    color: white;
+    padding-left: 3%;
+    padding-right: 3%;
+    margin-left: 5%;
+}
+
+.navbar_advance {
+    width: 20%;
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 3%;
+}
+
+.navbar_advance p {
+    padding-left: 3%;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 19%;
+    height: 100vh;
+    background-color: #191918;
+    color: white;
+    padding: 10px;
+    transform: translateX(0);
+    transition: transform 0.3s ease; 
+    padding-top: 3%;
+    padding-left: 1%;
+}
+
+.button_main {
+    align-items: last baseline;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 120%;
+}
+
+.button_main div {
+    width: auto;
+    height: auto;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    padding: 2% 16% 2% 7%;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+.dark_button {
+    display: flex;
+    color: white; 
+    background-color: black;
+}
+
+@media (max-width: 410px) {
+    .sidebar {
+        display: none;
+    }
+    .navbar_search {
+        width: 20vh;
+        height: 10vh;
+    }
+}
+  
+
+

@@ -1,0 +1,108 @@
+.posts_main {
+    margin-Left: 18%;
+    padding-left: 40px;
+    padding-top: 5%;
+    padding-bottom: 10%;
+    overflow-y: auto;
+    background-color: #292828;
+}
+
+.posts_fix {
+    display: flex;
+    flex-direction: row;
+    align-items: center;  
+    margin-top: 5%; 
+}
+
+
+.posts_text {
+    font-size: 1.8rem;
+    font-weight: 600;
+    font-style: normal;
+    color: white;
+
+}
+
+
+.posts_contain{
+   height: auto;
+   width: 30%; 
+   border-radius: var(--8px, 8px);
+    background: rgba(255, 230, 198, 0.25);
+    box-shadow: 0px 1.328px 0.664px 0px rgba(0, 0, 0, 0.12), 0px 0px 0.664px 0px rgba(0, 0, 0, 0.21);
+    padding: 2%;
+}
+
+.posts_main_text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.posts_main_text  p {
+    color: #AAA;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.7rem;
+    padding-left: 2% ;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.Separator {
+    margin-left: 2%;
+}
+
+.posts_text_a {
+    width: 98%;
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 0;
+    justify-content: space-evenly;
+    align-content: normal;
+    margin-top: 3%;
+}
+
+.posts_text_b {
+    color: #FFF;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.posts_text_c {
+    color: #B2B2B2;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.posts_text_button {
+    display: flex;
+    align-items: center;
+    margin-top: 4%;
+}
+
+.posts_text_button a{
+    color: #F0BB90;
+    font-family: Roboto;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.199px;
+}
+
+.posts_text_button_a {
+    padding-left: 4% ;
+}
+
+.posts_main_img {
+    height: 40%;
+    width: 50%;
+}
+
+@media (maxwi) {
+    
+}
