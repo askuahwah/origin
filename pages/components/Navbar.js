@@ -1,12 +1,18 @@
 import React, { useRef, useState } from "react";
 import Link from "next/link";
-import  style from "../../styles/navbar.module.css";
-import Faders from "./svg/Faders.svg"
-import Light from "./svg/light.svg"
-import Dark from "./svg/dark.svg"
+import style from "../../styles/navbar.module.css";
+import Faders from "./svg/Faders.svg";
+import Light from "./svg/light.svg";
+import Dark from "./svg/dark.svg";
+import Menu from "./svg/menu_icon.svg";
 
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
   const toggleCart = () => {
     if (ref.current.classList.contains("translate-x-full")) {
       ref.current.classList.remove("translate-x-full");
@@ -41,6 +47,7 @@ const Navbar = () => {
   };
   const ref = useRef();
   return (
+    <div>
     <div className={style.navbar_main}>
       <div className={style.navbar_a}>
         <div className="flex nav-content text-white">
@@ -49,34 +56,32 @@ const Navbar = () => {
             type="text"
             placeholder="Search an influencer or project"
           />
-          <div
-            className={style.navbar_advance}
-          >
-          <Faders/>
-          <p>Advance filter</p> 
+          <div className={style.navbar_advance}>
+            <Faders />
+            <p>Advance filter</p>
           </div>
-
-          <div className="nav-side-buttons  absolute right-10 top-10 flex w-64 justify-end" style={{borderRadius: '8px'}}>
-            <svg
-              className="my-auto mx-4 "
-              width="32"
-              height="32"
-              viewBox="0 0 32 32"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M7.74906 11.917C7.74906 7.36044 11.4429 3.66663 15.9994 3.66663C20.556 3.66663 24.2498 7.36044 24.2498 11.917V18.0244L26.4 23.8096H5.59888L7.74906 18.0244V11.917Z"
-                stroke="white"
-                strokeWidth="1.5"
-              />
-              <path
-                d="M20.223 23.8099V24.1112C20.223 26.4431 18.3327 28.3334 16.0008 28.3334C13.6689 28.3334 11.7786 26.4431 11.7786 24.1112V23.8099"
-                stroke="white"
-                strokeWidth="1.5"
-              />
-              <circle cx="22.6665" cy="6.66663" r="4" fill="#FFE812" />
-            </svg>
+           <div className="nav-side-buttons  absolute right-11 top-12 flex w-64 justify-end" style={{borderRadius: '8px'}}>
+            <div>
+              <svg
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.74906 11.917C7.74906 7.36044 11.4429 3.66663 15.9994 3.66663C20.556 3.66663 24.2498 7.36044 24.2498 11.917V18.0244L26.4 23.8096H5.59888L7.74906 18.0244V11.917Z"
+                  stroke="white"
+                  strokeWidth="1.5"
+                />
+                <path
+                  d="M20.223 23.8099V24.1112C20.223 26.4431 18.3327 28.3334 16.0008 28.3334C13.6689 28.3334 11.7786 26.4431 11.7786 24.1112V23.8099"
+                  stroke="white"
+                  strokeWidth="1.5"
+                />
+                <circle cx="22.6665" cy="6.66663" r="4" fill="#FFE812" />
+              </svg>
+            </div>
 
             <div
               className="my-auto mx-4 "
@@ -90,6 +95,7 @@ const Navbar = () => {
               />
             </div>
           </div>
+
 
           {/* Modal */}
           {isModalOpen && (
@@ -114,10 +120,7 @@ const Navbar = () => {
         <button onClick={toggleCart}>Sidebar</button>
       </div> */}
 
-      <div
-        ref={ref}
-        className={style.sidebar}
-      >
+      <div ref={ref} className={style.sidebar}>
         <div className="flex ">
           <svg
             width="48"
@@ -436,11 +439,23 @@ const Navbar = () => {
           </div>
         </div>
         <div className={style.button_main}>
-        <div><button className="flex"><Light/>Light</button></div>
-        <div style={{background: "black", marginLeft: "4px"}}><button className={style.dark_button}><Dark/>Dark</button></div>
-      </div>
+          <div>
+            <button className="flex">
+              <Light />
+              Light
+            </button>
+          </div>
+          <div style={{ background: "black", marginLeft: "4px" }}>
+            <button className={style.dark_button}>
+              <Dark />
+              Dark
+            </button>
+          </div>
+        </div>
       </div>
     </div>
+    </div>
+
   );
 };
 

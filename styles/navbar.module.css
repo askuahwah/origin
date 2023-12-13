@@ -13,6 +13,7 @@
     height: 20vh;
     margin-left: 19%;
     
+    
 }
 
 .navbar_search {
@@ -23,11 +24,12 @@
     color: white;
     padding-left: 3%;
     padding-right: 3%;
-    margin-left: 5%;
+    margin-left: 3%;
+
 }
 
 .navbar_advance {
-    width: 20%;
+    width: 23%;
     display: flex;
     margin-top: auto;
     margin-bottom: auto;
@@ -37,6 +39,8 @@
 .navbar_advance p {
     padding-left: 3%;
 }
+
+
 
 .sidebar {
     position: fixed;
@@ -78,14 +82,22 @@
     background-color: black;
 }
 
-@media (max-width: 410px) {
-    .sidebar {
+.profile_img {
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 10%;
+    margin-left: 10%;
+}
+.navbar_menu {
+    display: none;
+}
+
+
+@media (max-width: 430px) {
+    .navbar_main {
         display: none;
     }
-    .navbar_search {
-        width: 20vh;
-        height: 10vh;
-    }
+    
 }
   
 

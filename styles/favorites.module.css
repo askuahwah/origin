@@ -1,0 +1,104 @@
+.dashboard_main {
+    margin-left: 15em;
+    padding-left: 40px;
+    overflow-y: auto;
+    padding-bottom: 20vh;
+    background-color: #282928;
+    color: white;
+}
+
+
+.pagination-active {
+    background-color: black;
+}
+@media (min-width: 431px) {
+    .favorites_mobile_main {
+        display: none;
+    }
+    .Mobile_favorite {
+        display: none;
+    }
+    
+}
+
+@media (max-width : 430px) {
+    .dashboard_main {
+        display: none;
+    }
+    .favorites_mobile_main {
+        margin-top: 5%;
+    
+    }
+    .Mobile_favorite {
+        background-color: #282928;
+        padding-left: 3%;
+        padding-top: 3%;
+        padding-bottom: 5%;
+    }
+    .favorites_mobile_text {
+        color: white;
+        font-size: 1.8rem;
+        font-weight: 600;   
+    }
+
+    .favorites_container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5%;
+    }
+    .favorites_contain {
+        background-color: #504A45;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        border-radius: 10px;
+        width: 80%;
+        padding: 4%;
+    }
+    .favorites_text_a {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .favorites_rank {
+        font-size: 0.7rem;
+        color: #9a9a9a;
+    }
+
+    .favorites_rank_a {
+        font-size: 0.9rem;
+        color: #EFD9BB;
+        font-weight: 500;
+    }
+    .favorites_name {
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    .google_img {
+        display: flex; 
+        flex-direction: row; 
+        padding-left: 7vh;
+    }
+    .google_img div{
+        padding-left: 2vh;
+    }
+    .market_value {
+        display: flex;
+        margin-top: 4%;
+    }
+    .market_value_a {
+     margin-left: 8vh;
+    }
+    .favorites_share {
+        display: flex;
+        margin-top: 5%;
+        align-items: center;
+        justify-content: center;
+    }
+    .favorites_star {
+        margin-left: 2vh;
+    }
+}
