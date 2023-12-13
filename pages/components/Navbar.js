@@ -5,6 +5,7 @@ import Faders from "./svg/Faders.svg";
 import Light from "./svg/light.svg";
 import Dark from "./svg/dark.svg";
 import Menu from "./svg/menu_icon.svg";
+import MobileNav from "./new.js";
 
 
 const Navbar = () => {
@@ -452,6 +453,11 @@ const Navbar = () => {
             </button>
           </div>
         </div>
+      </div>
+    </div>
+    <div className={style.mobile_nav}>
+      <div>
+        <MobileNav/>
       </div>
     </div>
     </div>
