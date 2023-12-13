@@ -1,34 +1,18 @@
 import React from "react";
-import backgroundImage from '../public/images/bgimg1.png'; // Adjust the path accordingly
+import backgroundImage from '../public/images/bgimg1.png'; 
+import style from '../styles/dashboard.module.css';
 
 const Dashboard = () => {
   return (
     <div
-      className="dashboard-main text-white bg-black"
-      style={{
-        marginLeft: "15em", // 280px / 16px
-        paddingLeft: "2.5em", // 40px / 16px
-        overflowY: "auto",
-        backgroundColor: "#282829"
-      }}
+      className={style.dashboard_main}
     >
-      <div className="dashboard-title text-white font-semibold" style={{paddingTop: '30px', fontSize: '32px'}} >Dashboard</div>
-      <div className="dashboard-firstbar flex" style={{ paddingTop: '16px'}}>
-      <div
-  className="dashboard-firstbar-container justify-between firstcontainerfirstbar flex"
-  style={{
-    width: "34.5em", // 488px / 16px
-    height: "11.25em", // 180px / 16px
-    borderRadius: "0.875em", // 14px / 16px
-    paddingLeft: "0.625em", // 10px / 16px
-    paddingTop: "6.25em", // 100px / 16px
-    backgroundImage: "url('/images/bgimg1.png')",
-    boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
-  }}
-        >
-          <div className="text"  style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start'  }}>
-            <span className="text-3xl ">9.6k</span>
-            <span>total influencer</span>
+      <div className={style.dashboard_title} >Dashboard</div>
+      <div className={style.dashboard_firstbar}>
+      <div className= {style.dashboard_firstbar_container} >
+          <div className={style.text}>
+            <span className={style.text_a}>9.6k</span>
+            <span>Total Influencer</span>
           </div>
           <div style={{ alignSelf: 'flex-end', paddingBottom: '1em' }}>
             <svg
@@ -46,24 +30,12 @@ const Dashboard = () => {
             </svg>
           </div>
         </div>
-        <div
-          className="dashboard-firstbar-container flex justify-between"
-          style={{
-            width: "34.5em", // 488px / 16px
-            height: "11.25em", // 180px / 16px
-            borderRadius: "0.875em", // 14px / 16px
-            paddingLeft: "1.625em", // 10px / 16px
-            paddingTop: "6.25em", // 100px / 16px
-            marginLeft : "1em",
-            border: "1px solid rgba(99, 99, 99, 1)",
-            boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
-          }}
-        >
-          <div className="text "  style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start'  }}>
-            <span className="text-3xl">3,305</span>
-            <span>total promoted projects today</span>
+        <div className={style.dashboard_firstbar_container_a} >
+          <div className={style.text}>
+            <span className={style.text_a}>3,305</span>
+            <span>Total Promoted Projects Today</span>
           </div>
-          <div style={{ alignSelf: 'flex-end', paddingBottom: '1em' }}>
+          <div className={style.dashboard_firstbar_container_a_contain}>
             <svg
               width="46"
               height="34"
@@ -94,17 +66,9 @@ const Dashboard = () => {
         </div>
       </div>
 
-      <div className="dashboard-secondbar flex" style={{ paddingTop: '16px'}}>
-        <div className="secondbar-container"  style={{
-    backgroundColor: "rgb(54, 54, 54)",
-    width: "34.5em", // 488px / 16px
-    borderRadius: "0.875em", // 14px / 16px
-    padding: "1em", // 16px / 16px
-    height: "31.25em", // 500px / 16px
-    marginBottom: "1.875em", // 30px / 16px
-    boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
-  }} >
-            <div  className="flex justify-between">
+      <div className={style.dashboard_secondbar}>
+        <div className={style.secondbar_container} >
+            <div className={style.flex_between}>
                 <h1>Highest volume influencers</h1>
                 <button>View All</button>
             </div>
@@ -211,16 +175,7 @@ const Dashboard = () => {
                 <span className="text-xl font-semibold" style={{color: "#F4DBBA"}}>$4,564</span>
             </div>
         </div>
-        <div className="secondbar-container"  style={{
-    backgroundColor: "rgb(54, 54, 54)",
-    width: "34.5em", // 488px / 16px
-    borderRadius: "0.875em", // 14px / 16px
-    padding: "1em", // 16px / 16px
-    height: "31.25em", // 500px / 16px
-    marginBottom: "1.875em", // 30px / 16px
-    marginLeft: "1em",
-    boxShadow: "0px 4px 8px rgba(0, 0, 0, 0.1)",
-  }}>
+        <div className={style.secondbar_container_a}>
             <div  className="flex justify-between">
                 <h1>Most used Apps</h1>
                 <button>View All</button>
